@@ -3,7 +3,6 @@
 
 // use C99 types when available
 #ifndef _MSC_VER
-#	include <stdio.h>
 #	include <inttypes.h>
 #endif
 
