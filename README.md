@@ -36,12 +36,13 @@ Note: the block name must be a compile-time constant.
 
 ### PROFILE_DUMP(logger, js)
 When you're done collecting profiling information, call PROFILE_DUMP to export the results. The logger
-must be any thing (function or object) that can be called with the parenthesis operator with a const char * as argument.
+must be anything (function or object) that can be called with the parenthesis operator with a const char * as argument.
 js is meant to output JSON, but this is WIP currently, so leave it to false ;)
 
 Examples
 --------
 
 For a simple example of file IO profiling, see [fileio.cpp](https://raw.github.com/wsmind/lwprof/master/test/fileio.cpp).
+
 [multithread.cpp](https://raw.github.com/wsmind/lwprof/master/test/multithread.cpp) exposes a more advanced usage, showing
 how to profile multiple worker threads.
